@@ -12,7 +12,7 @@
     }
 
     :root {
-      --primary: #00ff88;
+      --primary: #C5C7BC;
       --secondary: #0a192f;
       --accent: #64ffda;
       --text: #8892b0;
@@ -463,12 +463,12 @@
       border-radius: 50%;
       border: 5px solid var(--primary);
       object-fit: cover;
-      box-shadow: 0 10px 30px rgba(0, 255, 136, 0.2);
+      
       transition: all 0.3s ease;
     }
 
     .profile-image:hover {
-      box-shadow: 0 15px 40px rgba(0, 255, 136, 0.3);
+      
       transform: scale(1.02);
     }
 
@@ -874,6 +874,14 @@
         display: block;
       }
     }
+    .button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* <-- jarak antar tombol */
+  flex-wrap: wrap; /* biar responsif di layar kecil */
+}
+
   </style>
 </head>
 <body>
@@ -913,15 +921,34 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <div class="hero-content">
-      <h1>Hi, I'm</h1>
-      <h2>Muhammad Thoifur Alhasan</h2>
-      <div class="typing-text" id="typingText"></div>
-      <p>A passionate Frontend Developer & UI/UX Designer based in Bogor, Indonesia. I create beautiful, functional, and user-friendly web experiences using modern technologies.</p>
-      <a href="https://api.whatsapp.com/send?phone=6281380063523&text=Halo%2C%20Thoi%20gw%20ada%20perlu%20nih" class="cta-button">Get In Touch</a>
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <h1>Hi, I'm</h1>
+    <h2>Muhammad Thoifur Alhasan</h2>
+    <div class="typing-text" id="typingText"></div>
+    <p>
+      A passionate Frontend Developer & UI/UX Designer based in Bogor, Indonesia. 
+      I create beautiful, functional, and user-friendly web experiences using modern technologies.
+    </p>
+
+    <div class="button-group">
+      <a 
+        href="https://api.whatsapp.com/send?phone=6281380063523&text=Halo%2C%20Thoi%20gw%20ada%20perlu%20nih" 
+        class="cta-button"
+        target="_blank"
+      >
+        Get In Touch
+      </a>
+      <a 
+        href="https://github.com/thoifur2007" 
+        class="cta-button github-button" 
+        target="_blank"
+      >
+        <i class="fab fa-github"></i> GitHub
+      </a>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- About Section -->
   <section class="about" id="about">
@@ -939,7 +966,7 @@
         </div>
       </div>
       <div style="text-align: center;">
-        <img src="/assets/img/profile.png" alt="Profile" class="profile-image">
+        <img src="/assets/img/thoi2007.jpg" alt="Profile" class="profile-image">
       </div>
       <div class="achievement-card">
         <div class="cert-image" style="width: 100%; height: 150px; margin-bottom: 20px; border-radius: 8px; overflow: hidden;">
